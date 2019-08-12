@@ -3,15 +3,15 @@
 describe('Arrays', function() {
   it('should create arrays', function() {
     var emptyArray = [];
-    expect(emptyArray.length).toBe(RESPOSTA);
+    expect(emptyArray.length).toBe(0);
 
     var multiTypeArray = [0, 1, "two", function () { return 3; }, {value1: 4, value2: 5}, [6, 7]];
-    expect(multiTypeArray[0]).toBe(RESPOSTA);
-    expect(multiTypeArray[2]).toBe(RESPOSTA);
-    expect(multiTypeArray[3]()).toBe(RESPOSTA);
-    expect(multiTypeArray[4].value1).toBe(RESPOSTA);
-    expect(multiTypeArray[4]["value2"]).toBe(RESPOSTA);
-    expect(multiTypeArray[5][0]).toBe(RESPOSTA);
+    expect(multiTypeArray[0]).toBe(0);
+    expect(multiTypeArray[2]).toBe("two");
+    expect(multiTypeArray[3]()).toBe(3);
+    expect(multiTypeArray[4].value1).toBe(4);
+    expect(multiTypeArray[4]["value2"]).toBe(5);
+    expect(multiTypeArray[5][0]).toBe(6);
   });
 
   it('should understand array literals', function () {
