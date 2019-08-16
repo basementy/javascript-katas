@@ -55,8 +55,8 @@ describe('subtração', function() {
   });
 
   it('retorna o valor da "subtração" entre uma string e um inteiro', function() {
-    const value = '1'; // IMPLEMENTE
-    expect(value - 1).toBe(0);
+    const value = -'1'; // IMPLEMENTE
+    expect(value + 1).toBe(0);
   });
 });
 
